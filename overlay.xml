@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories version="1.0">
+<repo priority="50" status="unofficial">
+	<name>aw1cks</name>
+	<description>Alex's Overlay</description>
+    <homepage>https://github.com/aw1cks/overlay</homepage>
+	<owner>
+		<email>mail@alexwicks.io</email>
+		<name>Alex Wicks</name>
+	</owner>
+	<source type="git">git://github.com/aw1cks/overlay.git</source>
+    <feed>https://github.com/aw1cks/overlay/commits/master.atom</feed>
+</repo>
+</repositories>
