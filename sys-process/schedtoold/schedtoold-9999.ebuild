@@ -25,7 +25,6 @@ src_configure() {
 
 src_install() {
 	dobin schedtoold
-	dodoc ChangeLog COPYING AUTHORS README example/schedtoold.conf
 	systemd_dounit init-scripts/systemd/schedtoold.service
 }
 
