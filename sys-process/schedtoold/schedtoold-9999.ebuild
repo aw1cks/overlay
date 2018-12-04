@@ -5,7 +5,7 @@ EAPI=6
 
 EGIT_REPO_URI="git://github.com/aw1cks/schedtoold.git"
 
-inherit cmake-utils git-r3 systemd
+inherit git-r3 systemd
 
 DESCRIPTION="schedtool daemon"
 HOMEPAGE="http://web.archive.org/web/20160407010156/http://www.darav.de/schedtoold.html"
