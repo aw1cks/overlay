@@ -3,7 +3,7 @@
 
 EAPI=6
 
-EGIT_REPO_URI="git://github.com/aw1cks/schedtoold.git"
+EGIT_REPO_URI="https://github.com/aw1cks/schedtoold.git"
 
 inherit git-r3 systemd
 
