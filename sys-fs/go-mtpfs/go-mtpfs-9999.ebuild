@@ -1,13 +1,13 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=5
 
 inherit git-r3 flag-o-matic toolchain-funcs
 
 DESCRIPTION="a simple FUSE filesystem for mounting Android devices as a MTP device"
 HOMEPAGE="https://github.com/hanwen/go-mtpfs"
-EGIT_REPO_URI="https://github.com/hanwen/go-mtpfs.git"
+EGIT_REPO_URI="https://github.com/aw1cks/go-mtpfs.git"
 
 LICENSE="BSD"
 SLOT="0"
