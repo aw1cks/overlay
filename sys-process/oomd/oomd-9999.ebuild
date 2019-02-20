@@ -41,5 +41,5 @@ src_install() {
 	into /usr/local/lib64/
 	dolib.so oomd/build/liboomd.so
 
-	systemd_dounit etc/oomd.service
+	systemd_dounit oomd/etc/oomd.service
 }
