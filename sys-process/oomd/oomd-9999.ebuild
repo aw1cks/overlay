@@ -25,11 +25,11 @@ src_prepare() {
 	mkdir oomd
 	mv -f ../oomd/* oomd
 	rmdir ../oomd
-	${S} = "${S}/oomd"
 	eapply_user
 }
 
 src_configure() {
+	cd oomd
 	meson build
 	ninja -C build
 }
