@@ -25,6 +25,7 @@ src_prepare() {
 	mkdir oomd
 	mv -f ../oomd/* oomd
 	rmdir ../oomd
+	cp oomd/etc/desktop.json oomd/etc/oomd.json
 	eapply_user
 }
 
@@ -35,11 +36,14 @@ src_configure() {
 }
 
 src_install() {
-	into /usr/local/bin/
+	into /usr/local/
 	dobin oomd/build/oomd_bin
 
-	into /usr/local/lib64/
+	into /usr/local/
 	dolib.so oomd/build/liboomd.so
+
+	into /etc
+	doins oomd/etc/desktop.json
 
 	systemd_dounit oomd/etc/oomd.service
 }
