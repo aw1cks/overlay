@@ -1,10 +1,13 @@
 # Copyright 2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-
+inherit eapi7-ver
 EAPI=6
 
+MY_PN="oomd"
+MY_P="${MY_PN}"
+
 EGIT_REPO_URI="https://github.com/facebookincubator/oomd"
-EGIT_CHECKOUT_DIR=${WORKDIR}/${PN}
+#EGIT_CHECKOUT_DIR=${WORKDIR}/${PN}
 
 inherit git-r3 systemd
 
