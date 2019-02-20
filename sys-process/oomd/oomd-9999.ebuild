@@ -4,12 +4,12 @@
 EAPI=6
 
 EGIT_REPO_URI="https://github.com/facebookincubator/oomd"
-EGIT_CHECKOUT_DIR=${WORKDIR}/oomd
+EGIT_CHECKOUT_DIR=${WORKDIR}/${PN}
 
 inherit git-r3 systemd
 
-DESCRIPTION="schedtool daemon"
-HOMEPAGE="http://web.archive.org/web/20160407010156/http://www.darav.de/schedtoold.html"
+DESCRIPTION="userspace OOM killer"
+HOMEPAGE="https://github.com/facebookincubator/oomd"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -21,7 +21,6 @@ RDEPEND="${DEPEND}"
 BDEPEND=""
 
 src_configure() {
-	cd oomd
 	meson build
 	ninja -C build
 }
