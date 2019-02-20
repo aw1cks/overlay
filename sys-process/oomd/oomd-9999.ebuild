@@ -26,6 +26,7 @@ src_prepare() {
 	mv -f ../oomd/* oomd
 	rmdir ../oomd
 	${S} = "${S}/oomd"
+	eapply_user
 }
 
 src_configure() {
