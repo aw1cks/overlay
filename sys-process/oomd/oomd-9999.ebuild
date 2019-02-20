@@ -2,10 +2,6 @@
 # Distributed under the terms of the GNU General Public License v2
 EAPI=6
 
-inherit eapi7-ver
-MY_PN="oomd"
-MY_P="${MY_PN}"
-
 EGIT_REPO_URI="https://github.com/facebookincubator/oomd"
 #EGIT_CHECKOUT_DIR=${WORKDIR}/${PN}
 
@@ -23,6 +19,15 @@ DEPEND="dev-util/meson dev-util/ninja dev-libs/jsoncpp"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
+src_prepare() {
+	mkdir ../oomd
+	mv -f ./* ../oomd
+	mkdir oomd
+	mv -f ../oomd/* oomd
+	rmdir ../oomd
+	${S} = "${S}/oomd"
+}
+
 src_configure() {
 	meson build
 	ninja -C build
@@ -37,4 +42,3 @@ src_install() {
 
 	systemd_dounit etc/oomd.service
 }
-
