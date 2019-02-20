@@ -1,8 +1,8 @@
 # Copyright 2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-inherit eapi7-ver
 EAPI=6
 
+inherit eapi7-ver
 MY_PN="oomd"
 MY_P="${MY_PN}"
 
