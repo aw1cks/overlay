@@ -25,7 +25,6 @@ SLOT="0"
 LICENSE="vim"
 IUSE="X acl cscope debug gpm lua luajit minimal nls perl python racket ruby selinux sound tcl terminal vim-pager"
 REQUIRED_USE="
-	python? ( ${PYTHON_REQUIRED_USE} )
 	vim-pager? ( !minimal )
 "
 
