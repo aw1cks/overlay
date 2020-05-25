@@ -14,7 +14,7 @@ EGIT_BRANCH="feature/dual_kawase"
 
 LICENSE="MPL-2.0 MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64 x86"
 IUSE="+config-file dbus +doc +drm opengl pcre"
 
 RDEPEND="dev-libs/libev
